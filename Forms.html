@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2 style="text-align: left;">Create an account</h2>
+    <form action="process.php">
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="age">Age:</label><br>
+            <select name="age" id="age">
+                <option value="age" selected>Select Age</option>
+                <option value="age">1-10</option>
+                <option value="age">11-20</option>
+                <option value="age">21-30</option>
+                <option value="age">31-40</option>
+                <option value="age">41-50</option>
+                <option value="age">51-60</option>
+                <option value="age">61-70</option>
+                <option value="age">71-80</option>
+                <option value="age">81-90</option>
+                <option value="age">91-100</option>
+                <option value="age">100+</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Please tell us a little about yourself:</label><br>
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+        <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">I agree to the <a href="https://www.twitch.tv/p/en/legal/terms-of-service/" target="_blank">terms of service</a></label>
+        </div>
+    </form>
+    <br>
+    <button type="signup">Sign Up</button>
+</body>
+</html>
