@@ -4,63 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floats</title>
+    <title>Disappearing Side Homework</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto auto;
+            padding: auto auto;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        .box {
+            background: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .box h2 {
+            text-align: center;
+        }
+
+        #box-1 {
+            background: yellow;
+            border: 1px solid #333;
+        }
+
+        #box-2 {
+            float: left;
+            width: 30%;
+            background: green;
+            border: 1px solid #333;
+        }
+
+        #box-2 h2 {
+            text-align: left;
+        }
+
+        #box-3 {
+            float: right;
+            width: 69%;
+            background: purple;
+            border: 1px solid #333;
+        }
+
+        #box-3 h2 {
+            text-align: right;
+        }
+
+        #box-4 {
+            background: blue;
+            border: 1px solid #333;
+        }
+
+        @media(max-width: 768px) {
+            #box-2 {
+                display: none;
+            }
+
+            #box-3 {
+                float: none;
+                width: 100%;
+            }
+        }
+      </style>
 </head>
-<style>
-    *{
-        box-sizing: border-box;
-    
-    }
-    .clr {
-        clear:both
-    }
-    .container{
-        margin-left: 420px;
-        margin-right: 420px;
-
-        padding: auto auto;
-    }
-    #box-1{
-        background-color: orange;
-        border: 1px solid;
-        padding: 10px;
-        margin-bottom: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    #box-2{
-        background-color: green;
-        border: 1px solid;
-        float: left;
-        width: 30%;
-        padding-bottom: 770px;
-    }
-    #box-3{
-        text-align: right;
-        background-color: purple;
-        border: 1px solid;
-        float: right;
-        width: 68%;
-        padding-bottom: 770px;
-        margin-left: 10px;
-        
-    }
-    #box-4{
-        text-align: center;
-        background-color: blue;
-        border: 1px solid;
-        margin-top: 10px;
-        padding-bottom: 50px;
-    }
-
-</style>
 <body>
-<div class="container"> 
-    <div id="box-1" class="box">Header</div>
-    <div id="box-2" class="box">Side</div>
-    <div id="box-3" class="box">Main</div> 
-    <div class="clr"></div>
-    <div id="box-4" class="box">Footer</div>
-</div>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h2>Header</h2>
+        </div>
+        <div id="box-2" class="box">
+            <h2>Side</h2>
+        </div>
+        <div id="box-3" class="box">
+            <h2>Main</h2>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h2>Footer</h2>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#navbar {
+  overflow: hidden;
+  background-color:whitesmoke;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="#">Home</a>
+  <a href="#">My Degrees</a>
+  <a href="#">Contact me</a>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/5c4607dc13.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        background-color:lightcyan;
+    
+    }
+    .clr {
+        clear:both
+    }
+    .container{
+        /* margin-left: 420px;
+        margin-right: 420px; */
+
+        padding: auto auto;
+    }
+    
+    #box-1{
+        font-size: larger;
+        background-color: white;
+        border: 1px solid;
+        padding: 10px;
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #box-2{
+        position: sticky;
+        background-color: white;
+        border: 1px solid;
+         float: left; 
+        left: 0;
+        width: 13%;
+        padding-bottom: 35px;
+        
+    }
+    #box-3{
+        border: 1px thin;
+        float: right;
+        width: 86%;
+        padding-bottom: 770px;
+        margin-left: 10px;
+        
+    }
+    .card {
+        margin-top: 10px;
+        margin-left: 17px;
+        border: 5px solid ;
+        width: fit-content;
+        border-color:black;
+
+    }
+    #name {
+        font-size: 35px;
+        font-weight: bolder;
+      }
+      #job {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      #social {
+        margin-left: 22px;
+        border: 1px solid;
+        width: 200px;
+      }
+      h2 {
+        font-family: 'Roboto', sans-serif;
+      }
+      #list1{
+        color: black;
+        text-shadow: 1px 0px 1px black;
+        font-size: larger;
+      }
+      #list2{
+        color: lightblue;
+        text-shadow: 1px 0px 1px black;
+        font-size: larger;
+      }
+      #list3{
+        color: red;
+        text-shadow: 1px 0px 1px black;
+        font-size: larger;
+      }
+      #list4{
+        color: purple;
+        font-size: larger;
+        text-shadow: 1px 0px 1px black;
+      }
+</style>
+<body>
+<div class="container"> 
+    <div id="box-1" class="box">Hello, and Welcome to my Portfolio</div>
+    <div id="box-2" class="box">
+        <div class="card">
+            <img src="https://cdn.discordapp.com/attachments/394196230600916992/902495395081506816/cIbPYBL.jpg" alt="Profile picture" width="200px" > 
+        <div id="name">Rouge Nijem</div>
+        <div id="job">Programmer</div>
+        </div>
+        <div id="social">   
+            <h2> &nbsp; &nbsp; &nbsp; &nbsp;Follow me</h2>
+            <ul>
+                <li id="list1">
+                    <a href="https://github.com/rougenij" target="_blank"><span class="fab fa-github"> &nbsp; GitHub</span></a>
+                </li>
+                <li id="list2">
+                  <a href="https://twitter.com/rougenij" target="_blank"><span class="fab fa-twitter"> &nbsp; Twitter</span></a>
+                </li>
+                <li id="list3">
+                  <a href="https://www.youtube.com/channel/UCW7EeOlUdpZ_bgBv4cvM6wg" target="_blank"><span class="fab fa-youtube"> &nbsp;Youtube</span></a>
+                </li>
+                <li id="list4">
+                  <a href="https://www.twitch.tv/baba_smurf" target="_blank"><span class="fab fa-twitch"> &nbsp; Twitch</span></a>
+                </li>
+                
+              </ul>
+            </div>  
+    </div>
+    <div id="box-3" class="box">
+        <h2>
+            My name is Rouge Nijem
+        </h2>
+        <h3>
+            Im learning on how to become a Full-Stack Developer
+        </h3>
+        <h3>Currently i have 2 Cerficates and they are the following : <br>
+         <a href="https://media.discordapp.net/attachments/852958619564507159/902602979763454042/download_1.png?width=477&height=676" target="_blank">Cyber Security</a> - I've successfully passed a Cyber Security Bootcamp 
+        <br> <a href="https://cdn.discordapp.com/attachments/852958619564507159/902602978345775104/download_2.png" target="_blank">Android App Developer</a> - I've successfully finished a course from John Bryce in Android App Developing
+        </h3>
+        <h3>My work:- <br>
+        My Team Website / store page - <a href="https://teammoke.com/" target="_blank">Team Moke</a> , was done by me using Wix.com & Shopify.com
+        </h3>
+      </div> 
+</div>
+</body>    
+</html>
+</body>
+</html>
